@@ -1,0 +1,210 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.000000
+xmax = 3.740000
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "Forced Alignment"
+		xmin = 0.000000
+		xmax = 3.740000
+		intervals: size = 49
+			intervals [1]:
+				xmin = 0.000000
+				xmax = 0.030000
+				text = "sil"
+			intervals [2]:
+				xmin = 0.030000
+				xmax = 0.150000
+				text = "th"
+			intervals [3]:
+				xmin = 0.150000
+				xmax = 0.220000
+				text = "ae"
+			intervals [4]:
+				xmin = 0.220000
+				xmax = 0.250000
+				text = "ng"
+			intervals [5]:
+				xmin = 0.250000
+				xmax = 0.270000
+				text = "k"
+			intervals [6]:
+				xmin = 0.270000
+				xmax = 0.370000
+				text = "s"
+			intervals [7]:
+				xmin = 0.370000
+				xmax = 0.390000
+				text = "f"
+			intervals [8]:
+				xmin = 0.390000
+				xmax = 0.410000
+				text = "ao"
+			intervals [9]:
+				xmin = 0.410000
+				xmax = 0.450000
+				text = "r"
+			intervals [10]:
+				xmin = 0.450000
+				xmax = 0.570000
+				text = "sh"
+			intervals [11]:
+				xmin = 0.570000
+				xmax = 0.660000
+				text = "eh"
+			intervals [12]:
+				xmin = 0.660000
+				xmax = 0.740000
+				text = "r"
+			intervals [13]:
+				xmin = 0.740000
+				xmax = 0.780000
+				text = "ih"
+			intervals [14]:
+				xmin = 0.780000
+				xmax = 0.800000
+				text = "ng"
+			intervals [15]:
+				xmin = 0.800000
+				xmax = 0.850000
+				text = "dh"
+			intervals [16]:
+				xmin = 0.850000
+				xmax = 1.110000
+				text = "ae"
+			intervals [17]:
+				xmin = 1.110000
+				xmax = 1.170000
+				text = "t"
+			intervals [18]:
+				xmin = 1.170000
+				xmax = 1.240000
+				text = "sil"
+			intervals [19]:
+				xmin = 1.240000
+				xmax = 1.350000
+				text = "ay"
+			intervals [20]:
+				xmin = 1.350000
+				xmax = 1.370000
+				text = "m"
+			intervals [21]:
+				xmin = 1.370000
+				xmax = 1.390000
+				text = "ih"
+			intervals [22]:
+				xmin = 1.390000
+				xmax = 1.410000
+				text = "n"
+			intervals [23]:
+				xmin = 1.410000
+				xmax = 1.430000
+				text = "t"
+			intervals [24]:
+				xmin = 1.430000
+				xmax = 1.450000
+				text = "ah"
+			intervals [25]:
+				xmin = 1.450000
+				xmax = 1.500000
+				text = "r"
+			intervals [26]:
+				xmin = 1.500000
+				xmax = 1.640000
+				text = "eh"
+			intervals [27]:
+				xmin = 1.640000
+				xmax = 1.810000
+				text = "s"
+			intervals [28]:
+				xmin = 1.810000
+				xmax = 1.900000
+				text = "t"
+			intervals [29]:
+				xmin = 1.900000
+				xmax = 1.970000
+				text = "ih"
+			intervals [30]:
+				xmin = 1.970000
+				xmax = 1.990000
+				text = "d"
+			intervals [31]:
+				xmin = 1.990000
+				xmax = 2.010000
+				text = "ih"
+			intervals [32]:
+				xmin = 2.010000
+				xmax = 2.160000
+				text = "n"
+			intervals [33]:
+				xmin = 2.160000
+				xmax = 2.230000
+				text = "w"
+			intervals [34]:
+				xmin = 2.230000
+				xmax = 2.300000
+				text = "ah"
+			intervals [35]:
+				xmin = 2.300000
+				xmax = 2.320000
+				text = "t"
+			intervals [36]:
+				xmin = 2.320000
+				xmax = 2.390000
+				text = "m"
+			intervals [37]:
+				xmin = 2.390000
+				xmax = 2.470000
+				text = "ey"
+			intervals [38]:
+				xmin = 2.470000
+				xmax = 2.520000
+				text = "k"
+			intervals [39]:
+				xmin = 2.520000
+				xmax = 2.640000
+				text = "s"
+			intervals [40]:
+				xmin = 2.640000
+				xmax = 2.710000
+				text = "y"
+			intervals [41]:
+				xmin = 2.710000
+				xmax = 2.980000
+				text = "uw"
+			intervals [42]:
+				xmin = 2.980000
+				xmax = 3.090000
+				text = "ih"
+			intervals [43]:
+				xmin = 3.090000
+				xmax = 3.150000
+				text = "k"
+			intervals [44]:
+				xmin = 3.150000
+				xmax = 3.260000
+				text = "s"
+			intervals [45]:
+				xmin = 3.260000
+				xmax = 3.580000
+				text = "ay"
+			intervals [46]:
+				xmin = 3.580000
+				xmax = 3.670000
+				text = "t"
+			intervals [47]:
+				xmin = 3.670000
+				xmax = 3.690000
+				text = "ah"
+			intervals [48]:
+				xmin = 3.690000
+				xmax = 3.710000
+				text = "d"
+			intervals [49]:
+				xmin = 3.710000
+				xmax = 3.740000
+				text = "sil"

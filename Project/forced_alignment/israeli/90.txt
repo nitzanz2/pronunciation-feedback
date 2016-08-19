@@ -1,0 +1,35 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/wavFile/wavFile.scores
+data/wavFile/wavFile.dist
+data/wavFile/wavFile.phonemes
+1.phonemes  =  f ih el t er d 
+D2_max=3507.9 w*phi(x,y_hat)=3507.9
+predicted= 0 7 9 17 25 56  61
+confidence= 57.5065
+aligned_phoneme_score= 0.149536
+sentence confidence: 3507.9
+phonemes  =  f ih el t er d 
+max phonems: iy ih s dh ae iy
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(15)		f		467.423		iy		715.564		248.141		0.653223
+2:(18)		ih		778.893		ih		778.893		0				1
+3:(11)		el		662.923		s		732.858		69.9344		0.904573
+4:(31)		t		721.761		dh		779.704		57.9427		0.925686
+5:(13)		er		317.67		ae		702.387		384.717		0.452271
+6:(7)		d		559.225		iy		589.489		30.264		0.948661
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(15)		f		0			ae		0			0			-nan
+2:(18)		ih		-nan		ae		0			-nan		-nan
+3:(11)		el		0			ae		0			0			-nan
+4:(31)		t		-nan		ae		0			-nan		-nan
+5:(13)		er		8.3048e-168	ae		1			1			8.3048e-168
+6:(7)		d		7.18627e-14	iy		1			1			7.18627e-14
+final_scores: 6 0.6532229936374974 1 0.9045729514691293 0.9256862263683202 0.4522714318271489 0.948660623815887 
+61
+61
+Done.

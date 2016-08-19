@@ -1,0 +1,12 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/example_fa/example_fa.scores
+data/example_fa/example_fa.dist
+data/example_fa/example_fa.phonemes
+phonemes=sil p r ae sil jh eh sil k t r iy sil d ih v eh ae ah sil p m ah ae sil t w ae z sil p r ah s iy sil d ih ng t uw s ae ow ae iy sil 
+predicted= 0 12 19 21 33 37 39 47 49 51 53 55 57 59 61 66 75 77 92 96 98 100 103 109 111 113 121 126 132 138 147 149 151 154 169 180 182 184 191 202 209 219 235 245 247 264 275  303
+confidence= 13.1002
+303
+303
+Done.

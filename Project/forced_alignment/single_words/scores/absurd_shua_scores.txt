@@ -1,0 +1,33 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/absurd_shua/absurd_shua.scores
+data/absurd_shua/absurd_shua.dist
+data/absurd_shua/absurd_shua.phonemes
+1.phonemes  =  ah b s er d 
+D2_max=3928.34 w*phi(x,y_hat)=3928.34
+predicted= 0 7 10 25 51  58
+confidence= 67.7301
+aligned_phoneme_score= 1.67285
+sentence confidence: 3928.34
+phonemes  =  ah b s er d 
+max phonems: m hh s er hh
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(1)		ah		755.315		m		793.865		38.5499		0.95144
+2:(5)		b		664.863		hh		938.787		273.924		0.708215
+3:(28)		s		888.607		s		888.607		0				1
+4:(13)		er		881.566		er		881.566		0				1
+5:(7)		d		737.994		hh		799.167		61.1725		0.923455
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(1)		ah		-nan		ae		0			-nan		-nan
+2:(5)		b		0			ae		0			0			-nan
+3:(28)		s		-nan		ae		0			-nan		-nan
+4:(13)		er		-nan		ae		0			-nan		-nan
+5:(7)		d		-nan		ae		0			-nan		-nan
+final_scores: 5 0.9514401933045854 0.7082148302794068 1 1 0.9234546835652793 
+58
+58
+Done.

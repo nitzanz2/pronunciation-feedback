@@ -1,0 +1,35 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/anything_shua/anything_shua.scores
+data/anything_shua/anything_shua.dist
+data/anything_shua/anything_shua.phonemes
+1.phonemes  =  eh en iy th ih ng 
+D2_max=3727 w*phi(x,y_hat)=3727
+predicted= 0 15 19 27 37 49  67
+confidence= 55.6269
+aligned_phoneme_score= 0.739879
+sentence confidence: 3727
+phonemes  =  eh en iy th ih ng 
+max phonems: t dx iy v ey v
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(10)		eh		549.953		t		569.123		19.1695		0.966317
+2:(12)		en		690.335		dx		734.078		43.7428		0.940411
+3:(19)		iy		849.367		iy		849.367		0				1
+4:(32)		th		457.455		v		694.929		237.475		0.658275
+5:(18)		ih		724.578		ey		809.246		84.6679		0.895374
+6:(23)		ng		455.314		v		664.432		209.118		0.685268
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(10)		eh		4.72755e-09	t		0.999687	0.999687	4.72903e-09
+2:(12)		en		0			ae		0			0			-nan
+3:(19)		iy		-nan		ae		0			-nan		-nan
+4:(32)		th		7.34565e-104	v		1			1			7.34565e-104
+5:(18)		ih		-nan		ae		0			-nan		-nan
+6:(23)		ng		1.51802e-91	v		1			1			1.51802e-91
+final_scores: 6 0.9663173865477283 0.9404112478894496 1 0.6582749986062097 0.8953742778272186 0.6852683454952344 
+67
+67
+Done.

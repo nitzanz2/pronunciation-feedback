@@ -1,0 +1,172 @@
+INFO: main.c(465): Parsing command line:
+./s3decode-anytopo \
+	-logbase 1.0001 \
+	-mdeffn /homes/reyes/sphinx/WSJ/training/model_architecture/WSJ_clean_13Cepstra.2800.mdef \
+	-senmgaufn .cont. \
+	-meanfn /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/means \
+	-varfn /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/variances \
+	-mixwfn /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/mixture_weights \
+	-tmatfn /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/transition_matrices \
+	-feat 1s_c_d_dd \
+	-topn 32 \
+	-beam 1e-80 \
+	-dictfn /homes/reyes/sphinx/WSJ/training/lists/cmudict.0.6d \
+	-fdictfn /homes/reyes/sphinx/WSJ/training/lists/fillerdict \
+	-ctlfn /homes/reyes/sphinx/WSJ/training/lists/complete_FILELIST.cleanwsj0 \
+	-cepdir /projects/speech-db/featurefiles/WSJ/WSJ0/channel1_cep13 \
+	-cepext cep \
+	-ceplen 13 \
+	-agc none \
+	-cmn current \
+	-langwt 9.5 \
+	-lmfn /homes/bhiksha/expts/BN/FROMCMU/fastdecoder/language_model.arpaformat.DMP 
+
+INFO: main.c(501): Configuration in effect:
+[Switch]      [Default] [Value]                                                                                                     
+-logbase      1.0001    1.000100e+00                                                                                                
+-mdeffn                 /homes/reyes/sphinx/WSJ/training/model_architecture/WSJ_clean_13Cepstra.2800.mdef                           
+-tmatfn                 /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/transition_matrices
+-meanfn                 /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/means              
+-varfn                  /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/variances          
+-senmgaufn    .cont.    .cont.                                                                                                      
+-mixwfn                 /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/mixture_weights    
+-lambdafn                                                                                                                           
+-tpfloor      0.0001    1.000000e-04                                                                                                
+-varfloor     0.0001    1.000000e-04                                                                                                
+-mwfloor      0.0000001 1.000000e-07                                                                                                
+-agc          max       none                                                                                                        
+-cmn          current   current                                                                                                     
+-varnorm      no        no                                                                                                          
+-feat         s2_4x     1s_c_d_dd                                                                                                   
+-ceplen       13        13                                                                                                          
+-dictfn                 /homes/reyes/sphinx/WSJ/training/lists/cmudict.0.6d                                                         
+-fdictfn                /homes/reyes/sphinx/WSJ/training/lists/fillerdict                                                           
+-lmfn                   /homes/bhiksha/expts/BN/FROMCMU/fastdecoder/language_model.arpaformat.DMP                                   
+-langwt       9.5       9.500000e+00                                                                                                
+-ugwt         0.7       7.000000e-01                                                                                                
+-bestpath     0         0                                                                                                           
+-min_endfr    3         3                                                                                                           
+-dagfudge     2         2                                                                                                           
+-bestpathlw                                                                                                                         
+-inspen       0.65      6.500000e-01                                                                                                
+-silpen       0.1       1.000000e-01                                                                                                
+-noisepen     0.05      5.000000e-02                                                                                                
+-fillpenfn                                                                                                                          
+-ctlfn                  /homes/reyes/sphinx/WSJ/training/lists/complete_FILELIST.cleanwsj0                                          
+-ctloffset    0         0                                                                                                           
+-ctlcount                                                                                                                           
+-cepdir       .         /projects/speech-db/featurefiles/WSJ/WSJ0/channel1_cep13                                                    
+-cepext       mfc       cep                                                                                                         
+-mllrctlfn                                                                                                                          
+-topn         4         32                                                                                                          
+-beam         1e-64     1.000000e-80                                                                                                
+-nwbeam       1e-27     1.000000e-27                                                                                                
+-phonepen     1.0       1.000000e+00                                                                                                
+-tracewhmm                                                                                                                          
+-hmmdumpsf                                                                                                                          
+-worddumpsf                                                                                                                         
+-inlatdir                                                                                                                           
+-inlatwin     50        50                                                                                                          
+-outlatdir                                                                                                                          
+-latext       lat.gz    lat.gz                                                                                                      
+-bestscoredir                                                                                                                       
+-matchfn                                                                                                                            
+-matchsegfn                                                                                                                         
+-logfn                                                                                                                              
+-backtrace    1         1                                                                                                           
+-bptblsize    32767     32767                                                                                                       
+-bptbldump    0         0                                                                                                           
+
+INFO: main.c(1458): Executing on: ayesha.merl.com
+INFO: main.c(1462): ./s3decode-anytopo COMPILED ON: Sep 23 2001, AT: 08:13:43
+
+INFO: logs3.c(56): Initializing logbase: 1.000100e+00
+INFO: logs3.c(113): Log-Add table size = 99023
+INFO: feat.c(112): Initializing feature stream to type: 1s_c_d_dd
+INFO: mdef.c(472): Reading model definition: /homes/reyes/sphinx/WSJ/training/model_architecture/WSJ_clean_13Cepstra.2800.mdef
+INFO: mdef.c(583): 51 CI-phones, 110829 CD-phones, 3 emitting states/phone, 2953 sen, 153 CI-sen
+INFO: dict.c(143): Reading dictionary
+INFO: dict.c(187): Reading main dictionary: /homes/reyes/sphinx/WSJ/training/lists/cmudict.0.6d
+INFO: dict.c(190): 129246 words read
+INFO: dict.c(195): Reading filler dictionary: /homes/reyes/sphinx/WSJ/training/lists/fillerdict
+INFO: dict.c(198): 26 words read
+INFO: gauden.c(118): Reading mixture gaussian parameter: /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/means
+INFO: gauden.c(209): 2953 codebook, 1 feature, size 8x39
+INFO: gauden.c(118): Reading mixture gaussian parameter: /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/variances
+INFO: gauden.c(209): 2953 codebook, 1 feature, size 8x39
+INFO: senone.c(137): Reading senone mixture weights: /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/mixture_weights
+INFO: senone.c(182): Truncating senone logs3(pdf) values by 10 bits, to 8 bits
+WARNING: "senone.c", line 227: Weight normalization failed for 3 senones
+INFO: senone.c(239): Read mixture weights for 2953 senones: 1 features x 8 codewords
+INFO: tmat.c(67): Reading HMM transition matrix: /homes/reyes/sphinx/WSJ/training/model_parameters/WSJ_clean_13Cepstra.cd_continuous_8gau/transition_matrices
+ERROR: "tmat.c", line 125: Normalization failed for tmat 10 from state 0
+ERROR: "tmat.c", line 125: Normalization failed for tmat 10 from state 1
+ERROR: "tmat.c", line 125: Normalization failed for tmat 10 from state 2
+INFO: tmat.c(146): Read 51 transition matrices of size 3x4
+INFO: lm.c(519): Reading /homes/bhiksha/expts/BN/FROMCMU/fastdecoder/language_model.arpaformat.DMP, name ""
+INFO: lm.c(368):    64001 unigrams
+INFO: lm.c(378):  9382014 bigrams [on disk]
+INFO: lm.c(387): 13459879 trigrams [on disk]
+INFO: lm.c(407):    32582 bigram prob entries
+INFO: lm.c(424):    21467 trigram bowt entries
+INFO: lm.c(439):    30084 trigram prob entries
+INFO: lm.c(454):    18325 trigram segtable entries (512 segsize)
+INFO: lm.c(499):    64001 word strings
+INFO: lm.c(501): 1144 LM words not in dict; ignored
+INFO: lm.c(243): LM("") added
+INFO: fwd.c(1921): Forward Viterbi Initialization
+INFO: fwd.c(1953): logs3(beam)= -1841854, logs3(nwbeam)= -621625
+INFO: fwd.c(572): Building within-word triphones
+INFO: fwd.c(1968): 0 within-word triphone instances mapped to CI-phones
+INFO: fwd.c(612): Building cross-word triphones
+INFO: fwd.c(1972): 0 cross-word triphones mapped to CI-phones
+
+INFO: main.c(1181): Processing ctl file /homes/reyes/sphinx/WSJ/training/lists/complete_FILELIST.cleanwsj0
+WARNING: "main.c", line 1209: No -matchsegfn argument
+
+INFO: main.c(1250): Utterance: disk.11_6_1/wsj0/sd_dt_05/001/001c0q01
+INFO: feat.c(182): Reading mfc file: /projects/speech-db/featurefiles/WSJ/WSJ0/channel1_cep13/disk.11_6_1/wsj0/sd_dt_05/001/001c0q01.cep
+INFO: main.c(1327): 001c0q01: 839 mfc frames
+WARNING: "main.c", line 807: -topn argument (32) > #density codewords (8); set to latter
+INFO: main.c(826): Computing all codebooks and senones each frame
+...................................................................................
+FV:001c0q01>                 WORD  SFrm  EFrm        AScr    LMScore
+fv:001c0q01>                  <s>     0    32     6496874          0
+fv:001c0q01>         SPECIFICALLY    33   112     3152854    -927061
+fv:001c0q01>                  THE   113   131       31625    -177026
+fv:001c0q01>                UNION   132   164      979787    -731759
+fv:001c0q01>                 SAID   165   179     -968048    -481178
+fv:001c0q01>                   IT   180   186     -979880    -276824
+fv:001c0q01>                  WAS   187   199     -114870    -116350
+fv:001c0q01>            PROPOSING   200   253     3018031    -974351
+fv:001c0q01>                   TO   254   263       31083    -208671
+fv:001c0q01>             PURCHASE   264   310      654334    -888567
+fv:001c0q01>                  ALL   311   331     1051856    -541741
+fv:001c0q01>                   OF   332   338      358208     -90766
+fv:001c0q01>                  THE   339   353     1224831    -144308
+fv:001c0q01>               ASSETS   354   393     2350400    -884035
+fv:001c0q01>                   OF   394   403      167849    -105311
+fv:001c0q01>            UNITED(2)   404   439     1381307    -896499
+fv:001c0q01>             AIRLINES   440   501      136268    -234045
+fv:001c0q01>            INCLUDING   502   546     -854213    -557567
+fv:001c0q01>               PLANES   547   595     2707291    -936874
+fv:001c0q01>                GATES   596   638     2745602   -1294559
+fv:001c0q01>           FACILITIES   639   702     1348647   -1153940
+fv:001c0q01>                  AND   703   717     -529828    -228906
+fv:001c0q01>              LANDING   718   755     1871980   -1014299
+fv:001c0q01>               RIGHTS   756   793      993821    -545084
+fv:001c0q01>                 </s>   794   838    10448317    -231005
+FV:001c0q01>                TOTAL                37704126  -13640726
+FWDVIT: SPECIFICALLY THE UNION SAID IT WAS PROPOSING TO PURCHASE ALL OF THE ASSETS OF UNITED AIRLINES INCLUDING PLANES GATES FACILITIES AND LANDING RIGHTS  (001c0q01 -40386178)
+FWDXCT: 001c0q01 S 64449578 T -40386178 A -26745452 L -1424972 0 -444394 0 <s> 33 -2559559 -97132 SPECIFICALLY 113 -1312239 -18180 THE 132 -864499 -76573 UNION 165 -843059 -50196 SAID 180 -447673 -28686 IT 187 -329209 -11794 WAS 200 -1572136 -102109 PROPOSING 254 -232744 -21512 TO 264 -1323004 -93080 PURCHASE 311 -348669 -56572 ALL 332 -141354 -9100 OF 339 -496210 -14736 THE 354 -1240398 -92602 ASSETS 394 -157135 -10632 OF 404 -1018567 -93914 UNITED(2) 440 -3670236 -24182 AIRLINES 502 -1133911 -58237 INCLUDING 547 -2053657 -98164 PLANES 596 -1469980 -135816 GATES 639 -2182293 -121014 FACILITIES 703 -752462 -23642 AND 718 -833257 -106314 LANDING 756 -976959 -56923 RIGHTS 794 -341848 -23862 </s> 839
+INFO: lm.c(604):       23 tg(), 11 bo; 210 fills, 85078 in mem (0.6%)
+INFO: lm.c(607):       12 bg(), 2 bo; 152 fills, 851357 in mem (9.1%)
+INFO: lm.c(604):        0 tg(), 0 bo; 0 fills, 85078 in mem (0.6%)
+INFO: lm.c(607):        0 bg(), 0 bo; 0 fills, 851357 in mem (9.1%)
+001c0q01: CTR:[frm        839][sen    2477567][mpx   28586781][~mpx    9533108][lat       2136]
+001c0q01: TMR:   839 Frm  12.73 xEl  12.40 xCPU [fwd  12.40x  99%][gau+sen   1.43x 11%][srch  10.97x 88%][H   4.70x 37%][XH   2.20x 17%][XW   4.07x 32%]
+
+INFO: main.c(1250): Utterance: disk.11_6_1/wsj0/sd_dt_05/001/001c0q02
+INFO: feat.c(182): Reading mfc file: /projects/speech-db/featurefiles/WSJ/WSJ0/channel1_cep13/disk.11_6_1/wsj0/sd_dt_05/001/001c0q02.cep
+INFO: main.c(1327): 001c0q02: 839 mfc frames
+..........................................................

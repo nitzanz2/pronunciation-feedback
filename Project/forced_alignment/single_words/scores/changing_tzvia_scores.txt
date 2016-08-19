@@ -1,0 +1,35 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/changing_tzvia/changing_tzvia.scores
+data/changing_tzvia/changing_tzvia.dist
+data/changing_tzvia/changing_tzvia.phonemes
+1.phonemes  =  ch ey en jh ih ng 
+D2_max=2478.73 w*phi(x,y_hat)=2478.73
+predicted= 0 33 59 67 92 121  153
+confidence= 16.2009
+aligned_phoneme_score= 0.168479
+sentence confidence: 2478.73
+phonemes  =  ch ey en jh ih ng 
+max phonems: sil ih ih iy f v
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(6)		ch		157.612		sil		742.421		584.809		0.212295
+2:(14)		ey		444.274		ih		505.953		61.6788		0.878094
+3:(12)		en		548.819		ih		681.9			133.082		0.804837
+4:(20)		jh		331.387		iy		687.954		356.567		0.481699
+5:(18)		ih		519.79		f		686.176		166.386		0.757517
+6:(23)		ng		476.854		v		706.164		229.311		0.675273
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(6)		ch		0			ae		0			0			-nan
+2:(14)		ey		1.63395e-27	ih		1			1			1.63395e-27
+3:(12)		en		1.5972e-58	ih		0.999961	0.999961	1.59726e-58
+4:(20)		jh		1.39588e-155	iy		1			1			1.39588e-155
+5:(18)		ih		5.48925e-73	f		1			1			5.48925e-73
+6:(23)		ng		2.5798e-100	v		1			1			2.5798e-100
+final_scores: 6 0.2122945279714331 0.8780937649450564 0.8048370907591846 0.4816990475625838 0.7575170179707067 0.6752727483173387 
+153
+153
+Done.

@@ -1,0 +1,39 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/techniques2/techniques2.scores
+data/techniques2/techniques2.dist
+data/techniques2/techniques2.phonemes
+1.phonemes  =  t eh sil en iy sil k s 
+D2_max=4810.36 w*phi(x,y_hat)=4810.36
+predicted= 0 3 13 19 23 35 48 51  66
+confidence= 72.8842
+aligned_phoneme_score= 2.34151
+sentence confidence: 4810.36
+phonemes  =  t eh sil en iy sil k s 
+max phonems: k eh sil en iy sil k s
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(31)		t		508.403		k		546.653		38.25			0.930029
+2:(10)		eh		546.357		eh		546.357		0			1
+3:(30)		sil		607.273		sil		607.273		0			1
+4:(12)		en		597.434		en		597.434		0			1
+5:(19)		iy		649.859		iy		649.859		0			1
+6:(30)		sil		602.075		sil		602.075		0			1
+7:(21)		k		665.578		k		665.578		0			1
+8:(28)		s		633.377		s		633.377		0			1
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(31)		t		2.4447e-17	k		1			1			2.4447e-17
+2:(10)		eh		0.993682	eh		0.993682	0			1
+3:(30)		sil		1			sil		1			0			1
+4:(12)		en		1			en		1			0			1
+5:(19)		iy		1			iy		1			0			1
+6:(30)		sil		1			sil		1			0			1
+7:(21)		k		1			k		1			0			1
+8:(28)		s		1			s		1			0			1
+final_scores: 8 2.444701712375515e-17 1 1 1 1 1 1 1 
+66
+66
+Done.

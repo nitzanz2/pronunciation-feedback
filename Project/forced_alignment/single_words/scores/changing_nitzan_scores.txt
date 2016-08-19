@@ -1,0 +1,35 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/changing_nitz/changing_nitz.scores
+data/changing_nitz/changing_nitz.dist
+data/changing_nitz/changing_nitz.phonemes
+1.phonemes  =  ch ey en jh ih ng 
+D2_max=3767.22 w*phi(x,y_hat)=3767.22
+predicted= 0 10 23 30 35 49  74
+confidence= 50.9083
+aligned_phoneme_score= 0.819861
+sentence confidence: 3767.22
+phonemes  =  ch ey en jh ih ng 
+max phonems: s ow ow sh ae sil
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(6)		ch		621.769		s		662.097		40.3276		0.939091
+2:(14)		ey		745.743		ow		758.306		12.5633		0.983432
+3:(12)		en		542.363		ow		711.165		168.802		0.76264
+4:(20)		jh		678.016		sh		813.048		135.032		0.833919
+5:(18)		ih		760.023		ae		810.819		50.7959		0.937352
+6:(23)		ng		419.303		sil		535.586		116.284		0.782885
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(6)		ch		3.06166e-18	s		1			1			3.06166e-18
+2:(14)		ey		-nan		ae		0			-nan		-nan
+3:(12)		en		0			ae		0			0			-nan
+4:(20)		jh		0			ae		0			0			-nan
+5:(18)		ih		-nan		ae		-nan		-nan		-nan
+6:(23)		ng		3.15252e-51	sil		1			1			3.15252e-51
+final_scores: 6 3.061663958680409e-18 -nan -nan -nan -nan 3.152516881289548e-51 
+74
+74
+Done.

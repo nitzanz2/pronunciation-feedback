@@ -1,0 +1,38 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.000000
+xmax = 0.760000
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "Forced Alignment"
+		xmin = 0.000000
+		xmax = 0.760000
+		intervals: size = 6
+			intervals [1]:
+				xmin = 0.000000
+				xmax = 0.080000
+				text = "sil"
+			intervals [2]:
+				xmin = 0.080000
+				xmax = 0.140000
+				text = "r"
+			intervals [3]:
+				xmin = 0.140000
+				xmax = 0.370000
+				text = "ae"
+			intervals [4]:
+				xmin = 0.370000
+				xmax = 0.480000
+				text = "sil"
+			intervals [5]:
+				xmin = 0.480000
+				xmax = 0.580000
+				text = "t"
+			intervals [6]:
+				xmin = 0.580000
+				xmax = 0.760000
+				text = "sil"

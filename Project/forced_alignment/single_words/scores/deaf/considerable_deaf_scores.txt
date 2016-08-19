@@ -1,0 +1,43 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/considerable_deaf/considerable_deaf.scores
+data/considerable_deaf/considerable_deaf.dist
+data/considerable_deaf/considerable_deaf.phonemes
+1.phonemes  =  k ah en s ih d er ah b el 
+D2_max=3319.59 w*phi(x,y_hat)=3319.59
+predicted= 0 12 21 26 32 38 42 63 81 89  113
+confidence= 29.3769
+aligned_phoneme_score= 0.479919
+sentence confidence: 3319.59
+phonemes  =  k ah en s ih d er ah b el 
+max phonems: hh ih s hh hh hh eh ow dh ah
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(21)		k		280.905		hh		433.836		152.931		0.647492
+2:(1)		ah		243.056		ih		422.622		179.566		0.575114
+3:(12)		en		338.354		s		462.867		124.513		0.730996
+4:(28)		s		437.674		hh		440.552		2.87799		0.993467
+5:(18)		ih		349.777		hh		456.134		106.357		0.76683
+6:(7)		d		367.228		hh		461.899		94.6716		0.795038
+7:(13)		er		273.001		eh		381.361		108.36		0.715859
+8:(1)		ah		436.802		ow		454.816		18.0137		0.960393
+9:(5)		b		264.614		dh		411.612		146.998		0.642872
+10:(11)		el		328.182		ah		399.137		70.9545		0.82223
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(21)		k		3.82797e-67	hh		1			1			3.82797e-67
+2:(1)		ah		1.0359e-78	ih		1			1			1.0359e-78
+3:(12)		en		8.40655e-55	s		1			1			8.40655e-55
+4:(28)		s		0.0532522	hh		0.946748	0.893496	0.0562475
+5:(18)		ih		6.4527e-47	hh		1			1			6.4527e-47
+6:(7)		d		7.66701e-42	hh		1			1			7.66701e-42
+7:(13)		er		8.70549e-48	eh		1			1			8.70549e-48
+8:(1)		ah		1.50225e-08	ow		1			1			1.50225e-08
+9:(5)		b		9.48179e-65	dh		0.65677	0.65677	1.4437e-64
+10:(11)		el		1.52133e-31	ah		0.993999	0.993999	1.53051e-31
+final_scores: 10 0.6474916027469385 0.5751140058233101 0.7309957402779654 0.9934673055399427 0.7668297246389303 0.7950384075801318 0.7158592092068111 0.9603933878916564 0.6428716133205833 0.8222300095273689 
+113
+113
+Done.

@@ -1,0 +1,33 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/michael/michael.scores
+data/michael/michael.dist
+data/michael/michael.phonemes
+1.phonemes  =  m ay sil k el 
+D2_max=5029.91 w*phi(x,y_hat)=5029.91
+predicted= 0 4 16 21 25  34
+confidence= 147.939
+aligned_phoneme_score= 1.77953
+sentence confidence: 5029.91
+phonemes  =  m ay sil k el 
+max phonems: m ay sil k ow
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(22)		m		902.149		m		902.149		0				1
+2:(4)		ay		992.536		ay		992.536		0				1
+3:(30)		sil		1025.28		sil		1025.28		0				1
+4:(21)		k		1153.44		k		1153.44		0				1
+5:(11)		el		956.505		ow		984.864		28.3593		0.971205
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(22)		m		-nan		ae		0			-nan		-nan
+2:(4)		ay		-nan		ae		-nan		-nan		-nan
+3:(30)		sil		-nan		ae		0			-nan		-nan
+4:(21)		k		-nan		ae		0			-nan		-nan
+5:(11)		el		-nan		ae		0			-nan		-nan
+final_scores: 5 -nan -nan -nan -nan -nan 
+34
+34
+Done.

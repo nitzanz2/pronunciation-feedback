@@ -1,0 +1,274 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.000000
+xmax = 5.260000
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "Forced Alignment"
+		xmin = 0.000000
+		xmax = 5.260000
+		intervals: size = 65
+			intervals [1]:
+				xmin = 0.000000
+				xmax = 0.130000
+				text = "sil"
+			intervals [2]:
+				xmin = 0.130000
+				xmax = 0.160000
+				text = "dh"
+			intervals [3]:
+				xmin = 0.160000
+				xmax = 0.220000
+				text = "ih"
+			intervals [4]:
+				xmin = 0.220000
+				xmax = 0.310000
+				text = "s"
+			intervals [5]:
+				xmin = 0.310000
+				xmax = 0.360000
+				text = "sil"
+			intervals [6]:
+				xmin = 0.360000
+				xmax = 0.400000
+				text = "k"
+			intervals [7]:
+				xmin = 0.400000
+				xmax = 0.450000
+				text = "aa"
+			intervals [8]:
+				xmin = 0.450000
+				xmax = 0.510000
+				text = "en"
+			intervals [9]:
+				xmin = 0.510000
+				xmax = 0.530000
+				text = "sil"
+			intervals [10]:
+				xmin = 0.530000
+				xmax = 0.550000
+				text = "b"
+			intervals [11]:
+				xmin = 0.550000
+				xmax = 0.610000
+				text = "iy"
+			intervals [12]:
+				xmin = 0.610000
+				xmax = 0.660000
+				text = "sil"
+			intervals [13]:
+				xmin = 0.660000
+				xmax = 0.680000
+				text = "d"
+			intervals [14]:
+				xmin = 0.680000
+				xmax = 0.830000
+				text = "ah"
+			intervals [15]:
+				xmin = 0.830000
+				xmax = 0.890000
+				text = "en"
+			intervals [16]:
+				xmin = 0.890000
+				xmax = 0.920000
+				text = "sil"
+			intervals [17]:
+				xmin = 0.920000
+				xmax = 0.950000
+				text = "t"
+			intervals [18]:
+				xmin = 0.950000
+				xmax = 1.030000
+				text = "uw"
+			intervals [19]:
+				xmin = 1.030000
+				xmax = 1.120000
+				text = "ah"
+			intervals [20]:
+				xmin = 1.120000
+				xmax = 1.190000
+				text = "hh"
+			intervals [21]:
+				xmin = 1.190000
+				xmax = 1.400000
+				text = "ay"
+			intervals [22]:
+				xmin = 1.400000
+				xmax = 1.430000
+				text = "sil"
+			intervals [23]:
+				xmin = 1.430000
+				xmax = 1.450000
+				text = "d"
+			intervals [24]:
+				xmin = 1.450000
+				xmax = 1.490000
+				text = "iy"
+			intervals [25]:
+				xmin = 1.490000
+				xmax = 1.550000
+				text = "sil"
+			intervals [26]:
+				xmin = 1.550000
+				xmax = 1.580000
+				text = "g"
+			intervals [27]:
+				xmin = 1.580000
+				xmax = 1.650000
+				text = "r"
+			intervals [28]:
+				xmin = 1.650000
+				xmax = 1.820000
+				text = "iy"
+			intervals [29]:
+				xmin = 1.820000
+				xmax = 1.890000
+				text = "ih"
+			intervals [30]:
+				xmin = 1.890000
+				xmax = 1.930000
+				text = "v"
+			intervals [31]:
+				xmin = 1.930000
+				xmax = 2.110000
+				text = "ae"
+			intervals [32]:
+				xmin = 2.110000
+				xmax = 2.150000
+				text = "sil"
+			intervals [33]:
+				xmin = 2.150000
+				xmax = 2.200000
+				text = "k"
+			intervals [34]:
+				xmin = 2.200000
+				xmax = 2.260000
+				text = "er"
+			intervals [35]:
+				xmin = 2.260000
+				xmax = 2.400000
+				text = "s"
+			intervals [36]:
+				xmin = 2.400000
+				xmax = 2.570000
+				text = "iy"
+			intervals [37]:
+				xmin = 2.570000
+				xmax = 2.640000
+				text = "sil"
+			intervals [38]:
+				xmin = 2.640000
+				xmax = 2.660000
+				text = "b"
+			intervals [39]:
+				xmin = 2.660000
+				xmax = 2.780000
+				text = "ay"
+			intervals [40]:
+				xmin = 2.780000
+				xmax = 2.910000
+				text = "eh"
+			intervals [41]:
+				xmin = 2.910000
+				xmax = 2.990000
+				text = "sil"
+			intervals [42]:
+				xmin = 2.990000
+				xmax = 3.010000
+				text = "g"
+			intervals [43]:
+				xmin = 3.010000
+				xmax = 3.090000
+				text = "z"
+			intervals [44]:
+				xmin = 3.090000
+				xmax = 3.150000
+				text = "ih"
+			intervals [45]:
+				xmin = 3.150000
+				xmax = 3.240000
+				text = "s"
+			intervals [46]:
+				xmin = 3.240000
+				xmax = 3.270000
+				text = "sil"
+			intervals [47]:
+				xmin = 3.270000
+				xmax = 3.300000
+				text = "t"
+			intervals [48]:
+				xmin = 3.300000
+				xmax = 3.360000
+				text = "ih"
+			intervals [49]:
+				xmin = 3.360000
+				xmax = 3.430000
+				text = "ng"
+			intervals [50]:
+				xmin = 3.430000
+				xmax = 3.560000
+				text = "s"
+			intervals [51]:
+				xmin = 3.560000
+				xmax = 3.700000
+				text = "er"
+			intervals [52]:
+				xmin = 3.700000
+				xmax = 3.760000
+				text = "v"
+			intervals [53]:
+				xmin = 3.760000
+				xmax = 3.900000
+				text = "ey"
+			intervals [54]:
+				xmin = 3.900000
+				xmax = 3.980000
+				text = "iy"
+			intervals [55]:
+				xmin = 3.980000
+				xmax = 4.050000
+				text = "ng"
+			intervals [56]:
+				xmin = 4.050000
+				xmax = 4.110000
+				text = "sil"
+			intervals [57]:
+				xmin = 4.110000
+				xmax = 4.150000
+				text = "t"
+			intervals [58]:
+				xmin = 4.150000
+				xmax = 4.250000
+				text = "eh"
+			intervals [59]:
+				xmin = 4.250000
+				xmax = 4.320000
+				text = "sil"
+			intervals [60]:
+				xmin = 4.320000
+				xmax = 4.360000
+				text = "en"
+			intervals [61]:
+				xmin = 4.360000
+				xmax = 4.480000
+				text = "iy"
+			intervals [62]:
+				xmin = 4.480000
+				xmax = 4.610000
+				text = "sil"
+			intervals [63]:
+				xmin = 4.610000
+				xmax = 4.640000
+				text = "k"
+			intervals [64]:
+				xmin = 4.640000
+				xmax = 4.940000
+				text = "s"
+			intervals [65]:
+				xmin = 4.940000
+				xmax = 5.260000
+				text = "sil"

@@ -1,0 +1,19 @@
+#
+# Copyright (c) 1995 Carnegie Mellon University.  ALL RIGHTS RESERVED.
+#
+
+TYPES = -DTRUE=1 -DFALSE=0
+
+INCLUDEDIR = -I. -I$(S3ROOT)/include -I$(S3ROOT)/src
+LIBDIR = $(S3ROOT)/lib/$(MACHINE)
+BINDIR = $(S3ROOT)/bin/$(MACHINE)
+DEBUGLIBDIR = $(S3ROOT)/libdbg/$(MACHINE)
+DEBUGBINDIR = $(S3ROOT)/bindbg/$(MACHINE)
+
+linux_CFLAGS       = -O2        -D__LINUX__=1 $(TYPES) $(INCLUDEDIR)
+OSX_CFLAGS       = -O2 -ffast-math $(TYPES) $(INCLUDEDIR)
+
+linux_cc = cc
+OSX_cc = cc
+
+CC = ${${MACHINE}_cc}

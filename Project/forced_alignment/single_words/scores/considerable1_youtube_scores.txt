@@ -1,0 +1,43 @@
+Info: training using tau_insensitive_loss.
+==================================================================================
+current file=0
+data/considerable1_youtube/considerable1_youtube.scores
+data/considerable1_youtube/considerable1_youtube.dist
+data/considerable1_youtube/considerable1_youtube.phonemes
+1.phonemes  =  k ah en s ih d er ah b el 
+D2_max=4336.22 w*phi(x,y_hat)=4336.22
+predicted= 0 6 14 18 34 41 45 58 66 69  87
+confidence= 49.8417
+aligned_phoneme_score= 1.19104
+sentence confidence: 4336.22
+phonemes  =  k ah en s ih d er ah b el 
+max phonems: k eh en s ih dx uw ow dx el
+---Not normalized---
+         expected  score     max phone score       dist       ratio
+1:(21)		k		444.993		k		444.993		0				1
+2:(1)		ah		302.812		eh		418.509		115.697		0.723549
+3:(12)		en		483.989		en		483.989		0				1
+4:(28)		s		482.226		s		482.226		0				1
+5:(18)		ih		515.917		ih		515.917		0				1
+6:(7)		d		390.848		dx		473.141		0				1
+7:(13)		er		437.646		uw		453.343		15.6965		0.965376
+8:(1)		ah		344.005		ow		453.974		109.969		0.757764
+9:(5)		b		476.627		dx		502.457		25.83			0.948593
+10:(11)		el		457.161		el		457.161		0				1
+
+---Normarlized---
+         expected  score     max phone score       dist       ratio
+1:(21)		k		1			k		1			0			1
+2:(1)		ah		5.6667e-51	eh		0.999708	0.999708	5.66836e-51
+3:(12)		en		1			en		1			0			1
+4:(28)		s		1			s		1			0			1
+5:(18)		ih		1			ih		1			0			1
+6:(7)		d		1.82143e-36	dx		0.99993	0.99993	1.82156e-36
+7:(13)		er		1.50589e-07	uw		0.987838	0.987838	1.52443e-07
+8:(1)		ah		1.73239e-48	ow		0.994367	0.994367	1.7422e-48
+9:(5)		b		6.05582e-12	dx		1			1			6.05582e-12
+10:(11)		el		1			el		1			0			1
+final_scores: 10 1 0.7235494075131127 1 1 1 1 0.9653761443060092 0.7577639830740552 0.9485926145023741 1 
+87
+87
+Done.

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE> Sphinx-3 Decoder User Guide </TITLE>
+<!-- Changed by: Ravishankar Mosur, 10-Nov-1997 -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000B0">
+<!--  BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000B0" -->
+
+<h1><img src="http://www.cs.cmu.edu/afs/cs/Web/Images/scslogo-s.gif" alt="Carnegie Mellon" align=center>Sphinx Speech Group</h1><P>
+<HR>
+
+<H1 align=center> Sphinx-3 Decoder User Guide </H1>
+<P align=center>Mosur Ravishankar (Ravi)<br>
+School of Computer Science<br>
+Carnegie Mellon University<br>
+Pittsburgh, PA 15213<br>
+10 Nov 1997<br>
+e-mail: <A HREF="mailto:rkm@cs.cmu.edu">rkm@cs.cmu.edu</A><br><br>
+<strong>Copyright (c) 1997 Carnegie Mellon University.  ALL RIGHTS RESERVED.</strong>
+</P>
+<HR>
+
+
+<H2 align=center> Introduction </H2>
+
+Sphinx-3 (S3) is the successor to the Sphinx-II speech recognition system from
+Carnegie Mellon University.  The main differences between the two are:
+<UL>
+<LI> S3 supports a much more flexible range of acoustic modelling.  Specifically, it
+can handle discrete, semi-continuous, or fully continuous acoustic models.  Sphinx-II
+can only handle semi-continuous models.
+<LI> S3 is completely written from scratch and does not contain any historical
+appendages.
+</UL>
+
+<P>
+The rest of this document is structured as follows:
+<UL>
+<LI><A HREF="#sec_s3suite">The Sphinx-3 Decoder Suite</A>
+<LI><A HREF="#sec_argref">Argument Reference</A>
+</UL>
+
+<HR>
+
+
+<H2 align=center><A NAME="sec_s3suite">The Sphinx-3 Decoder Suite</A></H2>
+The entire set of Sphinx-3 decoder programs can be found under:
+<A href="file:/afs/cs/project/plus-2/s3/">/afs/cs/project/plus-2/s3</a>.
+Binaries for alpha and linux(x86) platforms are under
+<A href="file:/afs/cs/project/plus-2/s3/bin/alpha">bin/alpha</a> and
+<A href="file:/afs/cs/project/plus-2/s3/bin/linux">bin/linux</a> respectively,
+and include the following:
+<UL>
+<LI><strong><code>s3decode</code></strong>: The Viterbi decoder using beam search.
+<LI><strong><code>s3dag</code></strong>: Shortest path search of the DAG constructed
+from the Viterbi decoder word lattice.
+<LI><strong><code>s3astar</code></strong>: N-best list generation from the Viterbi
+decoder word lattice.
+<LI><strong><code>s3align</code></strong>: Viterbi forced alignment.
+<LI><strong><code>s3allphone</code></strong>: Allphone Viterbi decoder.
+</UL>
+
+Running any of these programs without any arguments produces a short description of
+the command line arguments (and their defaults) needed to run the program.
+<P>
+
+Example csh scripts can be found in:
+<A href="file:/afs/cs/project/plus-2/s3/bin">/afs/cs/project/plus-2/s3/bin</a>.
+<P>
+
+<HR>
+
+
+<H2 align=center><A NAME="sec_argref">Arguments Reference</A></H2>
+
+<HR>
+
+
+</BODY>
+</HTML>
