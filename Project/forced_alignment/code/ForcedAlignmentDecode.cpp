@@ -80,15 +80,6 @@ map<string, set<string> > loadSimilarPhonemes_map() {
         }
     }
     similar_phonemes_ifs.close();
-
-    /*cout <<"similar_phonemes_map: \n";
-    for(map_it_type map_it = similar_phonemes_map.begin(); map_it != similar_phonemes_map.end(); map_it++) {
-        cout << map_it->first << " : ";
-        for(set_it_type set_it = map_it->second.begin(); set_it != map_it->second.end(); set_it++) {
-            cout << (*set_it) << " ,";
-        }
-        cout <<"\n";
-    }*/
     return similar_phonemes_map;
 }
 bool areSimilarPhonemes(map<string, set<string> >& similar_phonemes_map, string phone1, string phone2) {
@@ -156,7 +147,7 @@ int main(int argc, char **argv)
   // phoneme symbol to number mapping (Lee and Hon, 89)
   PhonemeSequence::load_phoneme_map(phonemes_filename, silence_symbol);
 
-  // similar phonemes map, map phonems to set of other phonemes that are similar
+  // similar phonemes map, maps a phoneme to the set of other phonemes that are similar to it
   map<string, set<string> > similar_phonemes_map = loadSimilarPhonemes_map();
   
   // Initiate classifier
@@ -204,8 +195,6 @@ int main(int argc, char **argv)
 
 	// read next example for dataset
 	test_dataset.read(x, y, remove_silence);
-
-    cout << "1.phonemes  =  " << x.phonemes << endl;
 	y_hat.resize(x.phonemes.size());
 
 	// predict label
@@ -213,53 +202,27 @@ int main(int argc, char **argv)
 
 	if (test_dataset.labels_given())
 	  cout << "alignment= " << y << endl;
-	cout << "predicted= " << y_hat << " " << x.scores.height() << endl;
+	cout << "predicted start times= " << y_hat << " " << x.scores.height() << endl;
 	cout << "confidence= " << confidence << endl;
-		cout << "aligned_phoneme_score= " << classifier.aligned_phoneme_scores(x, y_hat) << endl;
-
+	cout << "aligned_phoneme_score= " << classifier.aligned_phoneme_scores(x, y_hat) << endl;
 	cout << "sentence confidence: " << classifier.confidence_general(x, y_hat) << endl;
-	//infra::vector phonem_confidences = classifier.confidence_per_phoneme(x, y_hat);
-	// 1.Get the matrix of the confidences:
+
+	// 1. Get the matrix of the confidences:
 	infra::matrix confidences = classifier.confidence_per_phoneme(x, y_hat);
 
-
-	/*//for each interval y_hat[i]-y_hat[i+1] sum these lines for each column in .scores
-	infra::matrix blocks_sum(int(y_hat.size()),x.scores.width());
-	blocks_sum.zeros();
-	for(int timing=0; timing < int(y_hat.size()); timing++) {
-	  int start_time = y_hat[timing];
-	  int end_time;
-	  if (timing == int(y_hat.size()) - 1) {
-		end_time = x.scores.height();
-	  } else {
-		end_time = y_hat[timing+1];
-	  }
-	  //if (timing < 5) { cout<< timing << ": start_time="<<start_time<<" end_time="<<end_time<<"\n";}
-	  for (int phoneme=0; phoneme < int(x.scores.width()); phoneme++) {
-		double sum = 0;
-		//if (timing < 5 && phoneme < 5) {cout << "phoneme "<<phoneme<<" scores: ";}
-		for(int line=start_time; line < end_time; line++) {
-		  //if (timing < 5 && phoneme < 5) {cout << x.scores(line,phoneme) << ", ";}
-		  sum += x.scores(line,phoneme);
-		}
-		//if (timing < 5 && phoneme < 5) {cout<<"sum="<<sum<<"\n";}
-		blocks_sum(timing,phoneme) = sum;
-	  }
-	}
-	cout << "scores per block: " << blocks_sum;
-	*/
-	cout << "phonemes  =  " << x.phonemes << endl;
-	// 2.Print the maximum confidence of each line (frame):
-	cout<<"max phonems:";
+	// 2. Print the desired phonemes, given as input:
+	cout << "desired phonemes: " << x.phonemes << endl;
+	// 3. Print the maximum confidence of each line (frame):
+	cout << "max phonems:     ";
 	for (int line=0; line < int(confidences.height()); line++) {
 	  cout <<" "<< PhonemeSequence::index2phoneme[int(confidences.row(line).argmax())];
 	}
 	cout <<"\n";
 
-    // 3.Normalize the confidences matrix:
+    // 4. Normalize the confidences matrix:
     infra::matrix normalized_confidences = classifier.normalizeConfidences(confidences);
 
-	// 4. Print the wanted phoneme score against the maximum score of each frame:
+	// 5. Print the wanted phoneme score against the maximum score of each frame:
 	//    The final score for each frame, wanted phoneme, is its difference from the max score.
 	infra::vector final_scores(y_hat.size());
 	final_scores.zeros();
@@ -323,13 +286,7 @@ int main(int argc, char **argv)
 	  << distance << third_tab << ratio << "\n";
 	}
 
-
-
-
-
 	cout << "final_scores: " << final_scores << endl;
-	//cout << "confidences matrix: " << confidences;
-	//cout << "normalized confidences: " << normalized_confidences;
 
 #if 0    
 	int end_frame = 0;

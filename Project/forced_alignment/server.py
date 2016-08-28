@@ -1,35 +1,37 @@
 from bottle import get, post, request, route, run
+import os
+import subprocess
 import forced_alignment
-#import model_builder
-model_filename= "/opt/classification_server/models/best_so_far_gru_overlaps_3_labels.hdf5"
-rnn_type='GRU'
-model_built = False
-current_model = None
 request_number = 0
-@get('/predict')
+@route('/', method='POST')
 def predict():
-    global model_built
-    global current_model
     global request_number
-    # print "In predict controller"
-    # print "Request number %d" % request_number
     request_number = request_number + 1
-    #if not model_built:
-     #   current_model = model_builder.build_model(rnn_type, model_filename)
-      #  model_built = True
-    features_as_string = request.query.features
-    labels = forced_alignment.main("example.wav", "example.phones", "example.TextGrid", False)
-    #labels_output = repr(labels).replace('array','')
-    #labels_output=''.join([c for c in labels_output if c not in ('(', ')','[',']',',')])
-    #labels_output = labels_output.replace('\\n',';')
+    #get phones and record
+    phones = request.forms.get('phones')
+    wav= request.files.get('wav')
+    wav.save("temp.wav")
+    #change format
+    s = ['sox','temp.wav', '-r', '16k','wavFile1.wav','remix','1',]
+    subprocess.call(s)
+    #remove silence
+    s = ['sox','wavFile1.wav', 'temp1.wav','silence', '1', '0.01','1%','reverse']
+    subprocess.call(s)
+    s = ['sox','temp1.wav','wavFile.wav','silence', '1', '0.01','1%','reverse']
+    subprocess.call(s)
+    os.remove('temp1.wav')
+    file = open("phones.phones", 'w')
+    file.write(phones)
+    file.close()
+    forced_alignment.main("wavFile.wav", "phones.phones", "example.TextGrid", False)
+    t=open("wavFile.wav",'r')
+    os.remove("temp.wav")
     scores_file_name = "final_scores.txt"
-    scores_line_id = "normalized_phonem_confidences: "
+    scores_line_id = "final_scores: "
+    f2=open(scores_file_name, 'r')
     with open(scores_file_name, 'r') as f:
         for line in f:
             if scores_line_id in line:
                 return line[len(scores_line_id):]
-    #return "ok"
-@get('/')
-def hello():
-    return "bla!"
 run(host='localhost', port=3000)
+

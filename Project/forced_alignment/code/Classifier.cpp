@@ -448,13 +448,15 @@ double Classifier::predict(SpeechUtterance& x, StartTimeSequence &y_hat)
   return (D2_max/double(T));
 }
 
+// Return the general confidence of the utterance.
 double Classifier::confidence_general(SpeechUtterance& x, StartTimeSequence& y_hat)
 {
         double confidence = w*phi(x,y_hat);
         return confidence;
 }
 
-
+// Return a scores matrix where the lines represent time blocks according to the start times in y, 
+// and the columns represent all of the possible phonemes.
 infra::matrix Classifier::confidence_per_phoneme(SpeechUtterance& x, StartTimeSequence& y)
 {
   infra::vector v(y.size());
@@ -471,16 +473,15 @@ infra::matrix Classifier::confidence_per_phoneme(SpeechUtterance& x, StartTimeSe
       confidence_matrix(i,phoneme_index) = w.subvector(0,phi_size-1) * phi_1_per_phoneme(x, phoneme_index, phoneme_end_at, phoneme_end_at-y[i]+1);
       if (i > 0)
         confidence_matrix(i,phoneme_index) +=  w(phi_size-1) * phi_2_per_phoneme(x, phoneme_index,x.phonemes[i-1], phoneme_end_at, phoneme_end_at-y[i]+1, y[i]-y[i-1]);
+      if (confidence_matrix(i,phoneme_index) < 0) {
+        confidence_matrix(i,phoneme_index) = 0;
+      }
     }
-    //v(i) = w.subvector(0,phi_size-1) * phi_1(x, i, phoneme_end_at, phoneme_end_at-y[i]+1);
-    //if (i > 0)
-    //  v(i) +=  w(phi_size-1) * phi_2(x, i, phoneme_end_at, phoneme_end_at-y[i]+1, y[i]-y[i-1]);
   }
-  //return v;
-
   return confidence_matrix;
 }
 
+// Normalize the confidence matrix, converting it into a range of [0-1]
 infra::matrix Classifier::normalizeConfidences(infra::matrix confidences) {
     infra::matrix normalized_confidences(confidences.height(),confidences.width());
     normalized_confidences.zeros();
@@ -496,8 +497,19 @@ infra::matrix Classifier::normalizeConfidences(infra::matrix confidences) {
     return normalized_confidences;
 }
 
-infra::vector_view Classifier::phi_1_per_phoneme(SpeechUtterance& x, 
-                                     //int i, // phoneme index
+/************************************************************************
+ Function:     phi_1_per_phoneme
+ 
+ Description:  calculate static part of phi for inference for a specific 
+               phoneme
+ Inputs:       SpeechUtterance &x - raw features
+ int phoneme - the phoneme
+ int t - phoneme end time
+ int l - phoneme length
+ Output:       infra::vector_view
+ Comments:     none.
+ ***********************************************************************/
+infra::vector_view Classifier::phi_1_per_phoneme(SpeechUtterance& x,
                                      int phoneme,
                                      int t, // phoneme end time
                                      int l) // phoneme length
@@ -528,11 +540,13 @@ infra::vector_view Classifier::phi_1_per_phoneme(SpeechUtterance& x,
 }
 
 /************************************************************************
- Function:     phi_2
+ Function:     phi_2_per_phoneme
  
- Description:  calculate dynamic part of phi for inference
+ Description:  calculate dynamic part of phi for inference for a specific 
+               pair of phonemes
  Inputs:       SpeechUtterance &x - raw features
- int i - phoneme index
+ int phoneme1 - first phoneme
+ int phoneme2 - second phoneme
  int t - phoneme end time
  int l1 - phoneme length
  int l2 - previous phoneme length
@@ -540,7 +554,6 @@ infra::vector_view Classifier::phi_1_per_phoneme(SpeechUtterance& x,
  Comments:     none.
  ***********************************************************************/
 double Classifier::phi_2_per_phoneme(SpeechUtterance& x, 
-                         //int i, // phoneme index
                          int phoneme1,
                          int phoneme2,
                          int t, // phoneme end time
