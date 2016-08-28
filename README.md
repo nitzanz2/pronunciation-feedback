@@ -1,6 +1,6 @@
 Discriminative Phoneme Alignment for Pronunciation Feedback
 ===========================================================
-This repository contains our final project at 3rd year of CS in Bar-Ilan University under the supervision of Dr. Joseph Keshet.
+This repository contains our final project at 3rd year of CS in Bar-Ilan University.
 
 ## Project Discription
 This project proposes an Android application that provides visual feedback on the quality of pronunciation in a foreign language. In the application we built the learner of a foreign language is prompted to pronounce a word out of a list, his voice is recorded and analyzed, and he is given feedback on his pronunciation per syllable or letter. 
@@ -15,9 +15,25 @@ OS Linux Ubuntu (3.13+) is the current supported host development operating syst
 - Bottle: Python Web Framework
 
 ## Project Parts and Running Instructions
-* The forced (phoneme) alignment module is execute the forced_alignmet.py file under the path Server_code/forced_alignment, adding the speech .wav file, the corresponding .phoneme file containing the speech phonemes, and and name of an output file .TextGrid. If desired, a --debug flag can be used to track some of the code flow.
+* The forced (phoneme) alignment module - It is given as input the speech .wav file, the corresponding .phoneme file containing the speech phonemes, and name of an output file .TextGrid. It output into the TextGrid file all the audio information including the predicted start times of each phoneme, and into a 'final_scores.txt' file all the scores and phonemes calculations and information, including the final scored to each of the phoneme in the given speech.
+To run it you should execute the python file forced_alignmet.py under the path Server_code/forced_alignment, adding the .wav file, its corresponding .phoneme file, and name of an output file .TextGrid. If desired, a --debug flag can be used to track some of the code flow.
 Commandline example:
 python forced_alignment.py example.wav example.phones example.TextGrid
-* To run e server 
-* listens to http requests containing a serialized speech .wav file and its corresponding .phoneme file, 
+
+* The server - A Python Bottle server, which listens to http post requests containing a serialized speech .wav file and its corresponding .phoneme file, ~~~~~~~add other stuff the server does~~~~~~~~ ,runs the forced alignment module and return the final scores.
+To run in you should execute the python file server.py under the path Server_code/forced_alignment .
+* The Android Application - 
+
+
+
+#### Written by: Einav Saad, Hadas Cohen and  Nitzan Zeira
+##### Supervised by Dr. [Joseph Keshet](http://u.cs.biu.ac.il/~jkeshet/)
+
+For any question, suggestion etc:
+
+einav.saad27@gmail.com
+
+hadas10071992@gmail.com
+
+nzeira@gmail.com
 
