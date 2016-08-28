@@ -1,0 +1,84 @@
+# read true start time file and extrcat the begining and end silence times
+open(TRUE_ALIGN_IN,"$ARGV[1]") or die "Unable to open $ARGV[1]: $!\n";
+$line = <TRUE_ALIGN_IN>; # read first line
+$line = <TRUE_ALIGN_IN>; # read second line
+chomp $line;
+$first_phone_after_sil = $line;
+while (<TRUE_ALIGN_IN>) {
+    chomp;
+    $line = $_;
+} 
+close(TRUE_ALIGN_IN);
+$last_sil = $line;
+#print "first=$first_phone_after_sil last=$last_sil\n";
+
+open(FAKE_ALIGN_OUT,">$ARGV[3]") or die "Unable to open $ARGV[3]: $!\n";
+for ($i=0; $i < $num_labels; $i++) {
+    if ($i == 1) {
+        print FAKE_ALIGN_OUT "$first_phone_after_sil\n";
+    }
+    elsif ($i == ($num_labels-1)) {
+        print FAKE_ALIGN_OUT "$last_sil\n";
+    }
+    else {
+        print FAKE_ALIGN_OUT "0\n";
+    }
+}
+close(FAKE_ALIGN_OUT);
+
+
+
+
+
+
+
+
+
+
+
+# check if exists true start times
+if ($ARGV[0]=~ m/.wav/) {
+	($phn_filename = $ARGV[0]) =~ s/.wav/.phn/;
+}
+elsif ($ARGV[0]=~ m/.WAV/) {
+	($phn_filename = $ARGV[0]) =~ s/.WAV/.PHN/;
+}
+if (-e $phn_filename) {
+
+	# read true start time file and extract the begining and end silence times
+	open(TRUE_ALIGN_IN,"$phn_filename") or die "Unable to open phoneme file $phn_filename: $!\n";
+	$line = <TRUE_ALIGN_IN>; # read first line
+	$line = <TRUE_ALIGN_IN>; # read second line
+	chomp $line;
+	my ($start, $end, $phncode) = split(/ /, $line);
+	$first_phone_after_sil = $start;
+	while (<TRUE_ALIGN_IN>) {
+		chomp;
+		my ($start, $end, $phncode) = split(/ /, $_);
+		$last_sil = $start;
+		#print "-- $start $phncode\n";
+	} 
+	close(TRUE_ALIGN_IN);
+	#print "first=$first_phone_after_sil last=$last_sil\n";
+
+	open(FAKE_ALIGN_OUT,">$fake_start_times") or die "Unable to open $fake_start_times: $!\n";
+	for ($i=0; $i < $num_labels; $i++) {
+		if ($i == 1) {
+			# assuming frames of 10 msec and sampling rate of 16kHz
+			print FAKE_ALIGN_OUT int($first_phone_after_sil/160 + 0.5)."\n";
+		}
+		elsif ($i == ($num_labels-1)) {
+			print FAKE_ALIGN_OUT int($last_sil/160 + 0.5)."\n";
+		}
+		else {
+			print FAKE_ALIGN_OUT "0\n";
+		}
+	}
+	close(FAKE_ALIGN_OUT);
+}
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.000000
+xmax = 3.040000
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "Phonemes"
+		xmin = 0.000000
+		xmax = 3.040000
+		intervals: size = 50
+			intervals [1]:
+				xmin = 0.000000
+				xmax = 0.160000
+				text = "sil"
+			intervals [2]:
+				xmin = 0.160000
+				xmax = 0.200000
+				text = "t"
+			intervals [3]:
+				xmin = 0.200000
+				xmax = 0.210000
+				text = "ao"
+			intervals [4]:
+				xmin = 0.210000
+				xmax = 0.320000
+				text = "ay"
+			intervals [5]:
+				xmin = 0.320000
+				xmax = 0.380000
+				text = "sil"
+			intervals [6]:
+				xmin = 0.380000
+				xmax = 0.400000
+				text = "jh"
+			intervals [7]:
+				xmin = 0.400000
+				xmax = 0.410000
+				text = "d"
+			intervals [8]:
+				xmin = 0.410000
+				xmax = 0.470000
+				text = "ih"
+			intervals [9]:
+				xmin = 0.470000
+				xmax = 0.590000
+				text = "sil"
+			intervals [10]:
+				xmin = 0.590000
+				xmax = 0.610000
+				text = "d"
+			intervals [11]:
+				xmin = 0.610000
+				xmax = 0.660000
+				text = "ih"
+			intervals [12]:
+				xmin = 0.660000
+				xmax = 0.750000
+				text = "v"
+			intervals [13]:
+				xmin = 0.750000
+				xmax = 0.840000
+				text = "eh"
+			intervals [14]:
+				xmin = 0.840000
+				xmax = 0.850000
+				text = "ah"
+			intervals [15]:
+				xmin = 0.850000
+				xmax = 0.920000
+				text = "el"
+			intervals [16]:
+				xmin = 0.920000
+				xmax = 0.960000
+				text = "ah"
+			intervals [17]:
+				xmin = 0.960000
+				xmax = 1.030000
+				text = "m"
+			intervals [18]:
+				xmin = 1.030000
+				xmax = 1.110000
+				text = "ih"
+			intervals [19]:
+				xmin = 1.110000
+				xmax = 1.120000
+				text = "t"
+			intervals [20]:
+				xmin = 1.120000
+				xmax = 1.210000
+				text = "sil"
+			intervals [21]:
+				xmin = 1.210000
+				xmax = 1.250000
+				text = "w"
+			intervals [22]:
+				xmin = 1.250000
+				xmax = 1.300000
+				text = "ih"
+			intervals [23]:
+				xmin = 1.300000
+				xmax = 1.380000
+				text = "z"
+			intervals [24]:
+				xmin = 1.380000
+				xmax = 1.470000
+				text = "sil"
+			intervals [25]:
+				xmin = 1.470000
+				xmax = 1.490000
+				text = "dh"
+			intervals [26]:
+				xmin = 1.490000
+				xmax = 1.540000
+				text = "ih"
+			intervals [27]:
+				xmin = 1.540000
+				xmax = 1.690000
+				text = "s"
+			intervals [28]:
+				xmin = 1.690000
+				xmax = 1.810000
+				text = "iy"
+			intervals [29]:
+				xmin = 1.810000
+				xmax = 1.830000
+				text = "dx"
+			intervals [30]:
+				xmin = 1.830000
+				xmax = 1.910000
+				text = "iy"
+			intervals [31]:
+				xmin = 1.910000
+				xmax = 1.930000
+				text = "ng"
+			intervals [32]:
+				xmin = 1.930000
+				xmax = 1.960000
+				text = "en"
+			intervals [33]:
+				xmin = 1.960000
+				xmax = 2.020000
+				text = "sil"
+			intervals [34]:
+				xmin = 2.020000
+				xmax = 2.090000
+				text = "t"
+			intervals [35]:
+				xmin = 2.090000
+				xmax = 2.190000
+				text = "uw"
+			intervals [36]:
+				xmin = 2.190000
+				xmax = 2.210000
+				text = "f"
+			intervals [37]:
+				xmin = 2.210000
+				xmax = 2.220000
+				text = "s"
+			intervals [38]:
+				xmin = 2.220000
+				xmax = 2.230000
+				text = "z"
+			intervals [39]:
+				xmin = 2.230000
+				xmax = 2.350000
+				text = "s"
+			intervals [40]:
+				xmin = 2.350000
+				xmax = 2.400000
+				text = "el"
+			intervals [41]:
+				xmin = 2.400000
+				xmax = 2.410000
+				text = "ah"
+			intervals [42]:
+				xmin = 2.410000
+				xmax = 2.430000
+				text = "ow"
+			intervals [43]:
+				xmin = 2.430000
+				xmax = 2.440000
+				text = "ah"
+			intervals [44]:
+				xmin = 2.440000
+				xmax = 2.470000
+				text = "ow"
+			intervals [45]:
+				xmin = 2.470000
+				xmax = 2.560000
+				text = "el"
+			intervals [46]:
+				xmin = 2.560000
+				xmax = 2.600000
+				text = "z"
+			intervals [47]:
+				xmin = 2.600000
+				xmax = 2.620000
+				text = "el"
+			intervals [48]:
+				xmin = 2.620000
+				xmax = 2.650000
+				text = "ih"
+			intervals [49]:
+				xmin = 2.650000
+				xmax = 2.710000
+				text = "iy"
+			intervals [50]:
+				xmin = 2.710000
+				xmax = 3.040000
+				text = "sil"
