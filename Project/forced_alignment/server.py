@@ -29,7 +29,7 @@ def predict():
             if scores_line_id in line:
                 return line[len(scores_line_id):]
     #return "ok"
-@get('/hello')
+@get('/')
 def hello():
-    return "Hello!"
-run(host='0.0.0.0', port=8081)
+    return "bla!"
+run(host='localhost', port=3000)
