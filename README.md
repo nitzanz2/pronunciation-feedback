@@ -3,7 +3,7 @@ Discriminative Phoneme Alignment for Pronunciation Feedback
 This repository contains our final project at 3rd year of CS in Bar-Ilan University.
 
 ## Project Discription
-This project proposes an Android application that provides visual feedback on the quality of pronunciation in a foreign language. In the application we built the learner of a foreign language is prompted to pronounce a word out of a list, his voice is recorded and analyzed, and he is given feedback on his pronunciation per syllable or letter. 
+This project proposes an Android application that provides visual feedback on the quality of pronunciation in a foreign language. In the application we built, the learner of a foreign language is prompted to pronounce a word out of a list, his voice is recorded and analyzed, and he is given feedback on his pronunciation per syllable or letter. 
 For example, a learner of American English is asked to pronounced the word aluminum that should be pronounced canonically as [ah l uw m ah n ah m]. If the learner pronounced the word as [ah l uw m ae n ux m], he will be prompted visually that two letters aluminum were mispronounced.
 
 ## System Requirements
