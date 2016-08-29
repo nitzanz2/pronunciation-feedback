@@ -20,9 +20,10 @@ To run it you should execute the python file forced_alignmet.py under the path S
 Commandline example:
 python forced_alignment.py example.wav example.phones example.TextGrid
 
-* The server - A Python Bottle server, which listens to http post requests containing a serialized speech .wav file and its corresponding .phoneme file, ~~~~~~~add other stuff the server does~~~~~~~~ ,runs the forced alignment module and return the final scores.
+* The server - A Python Bottle server, which listens to http post requests containing a serialized speech .wav file and its corresponding .phoneme file, removes silence from the beginning and the end of the .wav file, change the wav file format to the required format and runs the forced alignment module and return the final scores.
 To run in you should execute the python file server.py under the path Server_code/forced_alignment .
-* The Android Application - 
+
+* The Android Application - the code for the application can be founed under the path Client_app_code
 
 
 
