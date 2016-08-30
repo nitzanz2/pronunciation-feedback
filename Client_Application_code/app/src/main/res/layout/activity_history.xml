@@ -1,0 +1,59 @@
+<!--android:background="#434d76"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context="com.example.hadas.project_final.WordsActivity"
+    android:animateLayoutChanges="false">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/lay"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SCORES"
+            android:textColor="#0e1540"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:focusable="false"
+            android:layout_weight="0.75"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/lay"
+        tools:context=".MainActivity"
+        android:paddingTop="30dp"
+        android:baselineAligned="false" >
+        <ListView
+            android:id="@+id/lstWords"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+
+
+            android:divider="@null"
+            android:background="@drawable/bg3">
+        </ListView>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+configurations.create("default")
+artifacts.add("default", file('httpmime-4.3.1.jar'))
+dependencies {
+    compile project(':app')
+}

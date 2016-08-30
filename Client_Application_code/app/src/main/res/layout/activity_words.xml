@@ -1,0 +1,66 @@
+<!--android:background="#434d76"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.example.hadas.project_final.WordsActivity"
+    android:animateLayoutChanges="false">
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="10dp"
+       android:paddingBottom="5dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:id="@+id/lay"
+       android:orientation="horizontal">
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="search"
+        android:textSize="18dp"
+        android:focusable="false"
+        android:background="#d6d7d7"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp" />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_gravity="center_vertical"
+           android:layout_weight="0"
+           android:id="@+id/btnFav"
+           android:text="favorites"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@+id/lay"
+        tools:context=".MainActivity"
+        android:baselineAligned="false" >
+        <ListView
+            android:id="@+id/lstWords"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:background="@drawable/div">
+        </ListView>
+        <LinearLayout
+            android:id="@+id/side_index"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="20"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

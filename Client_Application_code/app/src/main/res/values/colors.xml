@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gradient_start">#05abe0</color>
+    <color name="gradient_middle">#53cbf1</color>
+    <color name="gradient_end">#87e0fd</color>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="chat">#CAE1FF</color>
+    <color name="chat2">#5CACEE</color>
+    <color name="friends">#009688</color>
+    <color name="div">#f2f2f2</color>
+    <color name="button">#ffffff</color>
+    <color name="good">#77e860</color>
+    <color name="bad">#f84a3b</color>
+    <color name="med">#FFF530</color>
+
+</resources>
