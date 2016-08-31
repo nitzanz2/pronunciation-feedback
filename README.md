@@ -27,7 +27,8 @@ python forced_alignment.py example.wav example.phones example.TextGrid
   * Runs the forced alignment module and return the final scores.
 To run in you should execute the python file server.py under the path Server_code/forced_alignment .
 
-* The Android Application - Attached the apk which you can install on your android device.the code for the application can be founed under the path Client_app_code
+* The Android Application - Attached the apk which you can install on your android device. 
+  The code for the application can be founed under the directory Client_Application_code.
 
 
 
