@@ -41,11 +41,11 @@
             android:label="@string/title_activity_random" >
         </activity>
         <activity
-            android:name=".ScoresActivity"
+            android:name=".ReviewActivity"
             android:label="@string/title_activity_scores" >
         </activity>
         <activity
-            android:name=".HistoryActivity"
+            android:name=".ScoresActivity"
             android:label="@string/title_activity_history" >
         </activity>
     </application>
